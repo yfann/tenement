@@ -1,5 +1,5 @@
 
-exports.addTodo = function(Todo) {
+exports.addItem= function(Todo) {
   return function(req, res) {
     var todo = new Todo(req.body);
     todo.save(function(error, todo) {

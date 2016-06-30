@@ -6,15 +6,14 @@ var path= require('path');
 var routes=require('./routes/mongo');
 
 var mongoose=require('mongoose');
-var conn=mongoose.createConnection('localhost','mytestapp');
+var conn=mongoose.createConnection('localhost','tenement');
 
-var ToDoModel=require('./models/ToDoModel.js');
-var TodoSchema=ToDoModel.ToDoSchema;
-var todo=conn.model('todos',TodoSchema);
+var TenementModel=require('./models/TenementModel.js');
+var TenementItemsSchema=TenementModel.TenementItemsSchema;
+var items=conn.model('tenement_items',TenementItemsSchema);
 
-app.set('port', process.env.PORT || 3000);
-// app.set('views', __dirname + '/views');
-// app.set('view engine', 'jade');
+app.set('port', process.env.PORT || 2333);
+
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
@@ -22,16 +21,16 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/todos.json', routes.getAll(todo));
+app.get('/items.json', routes.getAll(items));
 
-app.get('/todos/:id.json', routes.get(todo));
+app.get('/items/:id.json', routes.get(items));
 
-app.put('/todo/:id.json', routes.update(todo));
+app.put('/item/:id.json', routes.update(items));
 
-app.post('/todo.json', routes.addTodo(todo));
+app.post('/item.json', routes.addItem(items));
 
-app.delete('/todo/:id.json', routes.remove(todo));
+app.delete('/item/:id.json', routes.remove(items));
 
-app.listen(3000,function(){
-	console.log('Yggdrasil listening on 3000...');
+app.listen(2333,function(){
+	console.log('Tenement listening on 2333...');
 });

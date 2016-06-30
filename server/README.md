@@ -1,10 +1,16 @@
-#Yggdrasil
+##Tenement Server
 
-##this app is based on express for testing
+express+mongodb+mongoose
 
+##Start
 
-+ express+mongodb+mongoose to build restful api
++ `npm install`
 
++ `mongod --dbpath [path]` 默认`c:\data\db`
 
+    http://localhost:27017/
+    
++ `node app.js`
 
+##Ref
 [reference](http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/#nodejs)
