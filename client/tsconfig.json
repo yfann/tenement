@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {    
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution":"node",
+    "jsx": "react",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "listFiles": false,
+    "allowJs":true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "typings"
+  ]
+}
