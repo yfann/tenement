@@ -24,8 +24,8 @@ module.exports = {
         extensions: ['', '.jsx', '.js', '.tsx', '.ts']
     },
     externals:{
-        "react": "React",
-        "react-dom": "ReactDOM",
-        "react-router":"ReactRouter"
+        // "react": "React",
+        // "react-dom": "ReactDOM",
+        // "react-router":"ReactRouter"
     }
 };
