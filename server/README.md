@@ -12,5 +12,7 @@ express+mongodb+mongoose
     
 + `node app.js`
 
+    http://localhost:2333
+
 ##Ref
 [reference](http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/#nodejs)
