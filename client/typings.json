@@ -4,6 +4,7 @@
     "react-router": "registry:npm/react-router#2.4.0+20160616150328"
   },
   "globalDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
     "material-ui": "registry:dt/material-ui#0.15.1+20160701192820",
     "react-dom": "registry:dt/react-dom#0.14.0+20160412154040"
   }
