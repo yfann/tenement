@@ -6,7 +6,7 @@ express+mongodb+mongoose
 
 + `npm install`
 
-+ `mongod --dbpath [path]` 默认`c:\data\db`
++ `mongod --dbpath [path]` 默认`c:\data\db`,无引号
 
     http://localhost:27017/
     
